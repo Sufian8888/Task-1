@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body class="font-sans bg-gradient-to-br from-gray-50 to-gray-100 text-gray-900">
+    <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" id="scrollToTop"
+        class="fixed bottom-5 right-5 bg-blue-600 text-white p-3 rounded-full shadow-lg opacity-0 transition-opacity duration-300 hover:bg-blue-700">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <header class="bg-white shadow fixed w-full z-10">
+        <nav class="max-w-6xl mx-auto flex justify-between items-center p-4">
+            <ul class="flex gap-6">
+                <a href="#intro" class="hover:text-blue-600">Home</a>
+                <a href="#skills" class="hover:text-blue-600">Skills</a>
+                <a href="#projects" class="hover:text-blue-600">Projects</a>
+                <a href="#contact" class="hover:text-blue-600">Contact</a>
+            </ul>
+            <h1 class="text-2xl font-bold">My Portfolio</h1>
+
+        </nav>
+    </header>
+
+    <section id="intro" class="min-h-screen flex items-center justify-center flex-col p-8" data-aos="fade-up">
+        <div
+            class="mx-auto rounded-full w-40 h-40 shadow-xl overflow-hidden border-4 border-blue-500 transform hover:scale-105 transition-transform duration-300">
+            <img src="/Profile.jpeg" alt="Profile" class="w-full h-full object-cover" />
+        </div>
+        <h2 class="mt-6 text-4xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            Hi, I'm Muhammad Sufian
+        </h2>
+        <p class="text-blue-600 text-xl mt-2 font-semibold">Front-End Developer</p>
+        <p class="mt-4 max-w-xl mx-auto text-gray-600 leading-relaxed text-center">
+            Passionate about creating clean, modern, and user-friendly web interfaces using the latest technologies.
+            I specialize in building responsive and accessible web applications that deliver exceptional user
+            experiences.
+        </p>
+        <div class="mt-8 flex gap-4">
+            <a href="#projects"
+                class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition-colors duration-300 shadow-lg">
+                View My Work
+            </a>
+            <a href="#contact"
+                class="bg-gray-800 text-white px-6 py-3 rounded-full hover:bg-gray-900 transition-colors duration-300 shadow-lg">
+                Contact Me
+            </a>
+        </div>
+    </section>
+
+    <section id="skills" class="py-12 bg-white text-center">
+        <h3 class="text-2xl font-bold mb-6">Skills</h3>
+        <div class="flex flex-wrap justify-center gap-4">
+            <span class="bg-blue-100 text-blue-700 px-4 py-2 rounded-full">HTML5</span>
+            <span class="bg-green-100 text-green-700 px-4 py-2 rounded-full">CSS3</span>
+            <span class="bg-yellow-100 text-yellow-700 px-4 py-2 rounded-full">JavaScript</span>
+            <span class="bg-purple-100 text-purple-700 px-4 py-2 rounded-full">Tailwind CSS</span>
+            <span class="bg-gray-100 text-gray-700 px-4 py-2 rounded-full">React.js</span>
+        </div>
+    </section>
+
+    <section id="projects" class="py-12 text-center">
+        <h3 class="text-2xl font-bold mb-6">Projects</h3>
+        <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            <div class="bg-white shadow rounded-lg p-4">
+                <h4 class="mt-3 font-semibold">Project One</h4>
+                <p class="text-gray-600 text-sm">A modern responsive landing page built using HTML, CSS, and JS.</p>
+                <div class="mt-2 flex justify-center gap-4">
+                    <a href="#" class="text-blue-600 hover:underline">GitHub</a>
+                    <a href="#" class="text-green-600 hover:underline">Live Demo</a>
+                </div>
+            </div>
+            <div class="bg-white shadow rounded-lg p-4">
+                <h4 class="mt-3 font-semibold">Project Two</h4>
+                <p class="text-gray-600 text-sm">Portfolio template created with Tailwind CSS and smooth animations.</p>
+                <div class="mt-2 flex justify-center gap-4">
+                    <a href="#" class="text-blue-600 hover:underline">GitHub</a>
+                    <a href="#" class="text-green-600 hover:underline">Live Demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-12 bg-white text-center">
+        <h3 class="text-2xl font-bold mb-6">Contact</h3>
+        <p>Email: <a href="mailto:example@gmail.com" class="text-blue-600">example@gmail.com</a></p>
+        <div class="flex justify-center gap-4 my-4">
+            <a href="#" class="text-2xl text-blue-600"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="text-2xl text-gray-800"><i class="fab fa-github"></i></a>
+            <a href="#" class="text-2xl text-pink-500"><i class="fab fa-instagram"></i></a>
+        </div>
+        <form class="max-w-md mx-auto mt-6">
+            <input type="text" placeholder="Your Name" class="w-full p-2 border rounded mb-3" required>
+            <input type="email" placeholder="Your Email" class="w-full p-2 border rounded mb-3" required>
+            <textarea placeholder="Your Message" class="w-full p-2 border rounded mb-3" required></textarea>
+            <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Send</button>
+        </form>
+    </section>
+
+    <footer class="text-center py-4 bg-gray-200 mt-8">
+        <p>&copy; 2025 Muhammad Sufian. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+
+        const scrollToTopBtn = document.getElementById('scrollToTop');
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                scrollToTopBtn.style.opacity = '1';
+            } else {
+                scrollToTopBtn.style.opacity = '0';
+            }
+        });
+    </script>
+</body>
+
+</html>
